@@ -1,0 +1,21 @@
+[project]
+name = "personality-classifier"
+version = "0.1.0"
+description = "A FastAPI app that predicts Introvert/Extrovert personality from behavioral features"
+requires-python = ">=3.9"
+
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pandas",
+    "scikit-learn",
+    "joblib",
+    "pydantic",
+]
+
+[project.scripts]
+train = "train:main"
+
+[tool.uvicorn]
+app = "main:app"
+reload = true
