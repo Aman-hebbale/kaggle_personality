@@ -27,10 +27,22 @@ A machine learning API that predicts whether a person is an **Introvert** or **E
 - **Preprocessing**: Median imputation for numeric features, most-frequent imputation + OneHotEncoding for categorical features, StandardScaler for numeric features
 - **CV Accuracy**: ~93%
 
+## Features
+
+| Feature | Type | Description |
+|---------|------|-------------|
+| `Time_spent_Alone` | numeric | Hours spent alone per day |
+| `Social_event_attendance` | numeric | Frequency of attending social events |
+| `Going_outside` | numeric | Frequency of going outside |
+| `Friends_circle_size` | numeric | Number of close friends |
+| `Post_frequency` | numeric | Social media post frequency |
+| `Stage_fear` | categorical | Yes / No |
+| `Drained_after_socializing` | categorical | Yes / No |
+
 ## Setup
 
 ```bash
-pip install -r requirements.txt
+pip install -e .
 ```
 
 ## Usage
